@@ -20,11 +20,26 @@ NOTE: For cross-compiling, see information [here](https://www.raspberrypi.org/do
 sudo apt install git bc bison flex libssl-dev make
 sudo apt install libncurses5-dev
 git clone --depth=1 --branch rpi-5.10.y https://github.com/raspberrypi/linux
+```
+Copy the files from THIS repository to the kernel and add it to the Make/Kconfig files for it to build.
+```
+cp panel-boe-vs035zsm-nw0-69p0.c linux/drivers/gpu/drm/panel/panel-boe-vs035zsm-nw0-69p0.c
+cp vc4-kms-dsi-vs035zsm-nw0-69p0-overlay.dts linux/arch/arm/boot/dts/overlays/vc4-kms-dsi-vs035zsm-nw0-69p0-overlay.dts
+```
+
+Add an entry to linux/drivers/gpu/drm/panel/Kconfig
+Add an entry to linux/drivers/gpu/drm/panel/Makefile
+
+Add an entry to linux/arch/arm/boot/dts/overlays/README
+Add an entry to linux/arch/arm/boot/dts/overlays/Makefile
+
+```
 cd linux
 KERNEL=kernel7l
 make bcm2711_defconfig
 make menuconfig
 ```
+
 Navigate to Device Drivers/Graphics support/Display panel, check BOE VS035ZSM NW0 69P0 panel and save
 
 Now we need to build and install kernel:
