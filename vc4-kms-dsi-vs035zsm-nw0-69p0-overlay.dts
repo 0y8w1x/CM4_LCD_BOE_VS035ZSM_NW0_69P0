@@ -1,0 +1,47 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2835";
+
+	fragment@0 {
+		target = <&dsi1>;
+		__overlay__{
+			status = "okay";
+			#address-cells = <1>;
+			#size-cells = <0>;
+			port {
+				dsi_out_port:endpoint {
+					remote-endpoint = <&panel_dsi_port>;
+				};
+			};
+
+			vs035zsm-nw0-69p0:vs035zsm-nw0-69p0@0 {
+				compatible    = "boe,vs035zsm-nw0-69p0";
+				status        = "okay";
+				reg           = <0>;
+				n-reset-gpios   = <&gpio 17 1>;     // LCD RESET
+				io-vdd-en-gpios  = <&gpio 4 0>;     // 1V8 Enable
+				vss-pn-en-gpios = <&gpio 5 0>;      // +5V7/-5V7 Enable
+				backlight-en-gpios = <&gpio 6 0>;   // BACKLIGHT Enable
+				port {
+					panel_dsi_port: endpoint {
+						remote-endpoint = <&dsi_out_port>;
+					};
+				};
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <&gpio>;
+		__overlay__ {
+			vs035zsm-nw0-69p0_pins: vs035zsm-nw0-69p0_pins {
+				brcm,pins = <4 5 6 17>;
+				brcm,function = <1 1 1 1>; // out
+				brcm,pull = <0 0 0 0>; // off
+			};
+		};
+
+	};
+};
