@@ -16,7 +16,7 @@
 				};
 			};
 
-			vs035zsm-nw0-69p0:vs035zsm-nw0-69p0@0 {
+			vs035zsm_nw0_69p0:vs035zsm_nw0_69p0@0 {
 				compatible    = "boe,vs035zsm-nw0-69p0";
 				status        = "okay";
 				reg           = <0>;
@@ -36,7 +36,7 @@
 	fragment@1 {
 		target = <&gpio>;
 		__overlay__ {
-			vs035zsm-nw0-69p0_pins: vs035zsm-nw0-69p0_pins {
+			vs035zsm_nw0_69p0_pins: vs035zsm_nw0_69p0_pins {
 				brcm,pins = <4 5 6 17>;
 				brcm,function = <1 1 1 1>; // out
 				brcm,pull = <0 0 0 0>; // off
