@@ -28,9 +28,11 @@ cp vc4-kms-dsi-vs035zsm-nw0-69p0-overlay.dts linux/arch/arm/boot/dts/overlays/vc
 ```
 
 Add an entry to linux/drivers/gpu/drm/panel/Kconfig
+
 Add an entry to linux/drivers/gpu/drm/panel/Makefile
 
 Add an entry to linux/arch/arm/boot/dts/overlays/README
+
 Add an entry to linux/arch/arm/boot/dts/overlays/Makefile
 
 ```
