@@ -62,7 +62,7 @@ sudo cp vc4-kms-dsi-vs035zsm-nw0-69p0.dtbo /boot/overlays/
 
 Then edit /boot/config.txt to add:
 ```
-lcd_ignore=1
+ignore_lcd=1
 dtoverlay=vc4-kms-v3d
 dtoverlay=vc4-kms-dsi-vs035zsm-nw0-69p0
 ```
