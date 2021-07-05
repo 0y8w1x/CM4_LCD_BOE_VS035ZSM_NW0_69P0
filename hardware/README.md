@@ -1,0 +1,1 @@
+**Note:** The board and schematic files are for Autodesk EAGLE.
