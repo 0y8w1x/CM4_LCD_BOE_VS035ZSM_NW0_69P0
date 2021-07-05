@@ -337,14 +337,14 @@ static int boe_panel_add(struct boe_panel *boe)
 		return ret;
 	}
 
-	boe->n_reset_gpio = devm_gpiod_get(dev, "n-reset", GPIOD_OUT_HIGH);
+	boe->n_reset_gpio = devm_gpiod_get(dev, "n-reset", GPIOD_OUT_LOW);
 	if (IS_ERR(boe->n_reset_gpio)) {
 		ret = PTR_ERR(boe->n_reset_gpio);
 		dev_err(dev, "cannot get n-reset-gpios %d\n", ret);
 		return ret;
 	}
 
-	boe->backlight_en_gpio = devm_gpiod_get(dev, "backlight-en", GPIOD_OUT_HIGH);
+	boe->backlight_en_gpio = devm_gpiod_get(dev, "backlight-en", GPIOD_OUT_LOW);
 	if (IS_ERR(boe->backlight_en_gpio)) {
 		ret = PTR_ERR(boe->backlight_en_gpio);
 		dev_err(dev, "cannot get backlight-en-gpios %d\n", ret);
@@ -379,8 +379,7 @@ static int boe_panel_probe(struct mipi_dsi_device *dsi)
 
 	dsi->lanes = 4;
 	dsi->format = MIPI_DSI_FMT_RGB888;
-	dsi->mode_flags =  MIPI_DSI_MODE_VIDEO_HSE | MIPI_DSI_MODE_VIDEO |
-			   MIPI_DSI_CLOCK_NON_CONTINUOUS;
+	dsi->mode_flags =  MIPI_DSI_MODE_VIDEO | MIPI_DSI_MODE_VIDEO_BURST;
 
 	boe = devm_kzalloc(&dsi->dev, sizeof(*boe), GFP_KERNEL);
 	if (!boe)
