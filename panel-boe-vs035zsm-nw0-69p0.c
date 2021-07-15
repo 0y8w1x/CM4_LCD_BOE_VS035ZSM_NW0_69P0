@@ -150,7 +150,7 @@ static int boe_panel_on(struct boe_panel *boe)
 	if (ret < 0)
 		dev_err(dev, "failed to set display on: %d\n", ret);
 
-	msleep(40);	
+	msleep(40);
 	return ret;
 }
 
@@ -196,10 +196,11 @@ static int boe_panel_unprepare(struct drm_panel *panel)
 
 	boe_panel_off(boe);
 
-	gpiod_set_value_cansleep(boe->n_reset_gpio, 1);
 	gpiod_set_value_cansleep(boe->io_vdd_en_gpio, 0);
 	gpiod_set_value_cansleep(boe->vss_pn_en_gpio, 0);
 	gpiod_set_value_cansleep(boe->backlight_en_gpio, 0);
+	gpiod_set_value_cansleep(boe->n_reset_gpio, 0);
+	usleep_range(2000, 3000);
 
 	boe->prepared = false;
 
@@ -214,19 +215,20 @@ static int boe_panel_prepare(struct drm_panel *panel)
 
 	if (boe->prepared)
 		return 0;
+	
+	gpiod_set_value_cansleep(boe->io_vdd_en_gpio, 0);
+	gpiod_set_value_cansleep(boe->vss_pn_en_gpio, 0);
+	gpiod_set_value_cansleep(boe->n_reset_gpio, 0);
+	usleep_range(2000, 3000);
 
 	gpiod_set_value_cansleep(boe->io_vdd_en_gpio, 1);
-	usleep_range(2000, 5000);
+	usleep_range(10000, 15000);
 
 	gpiod_set_value_cansleep(boe->vss_pn_en_gpio, 1);
-	usleep_range(2000, 5000);
-
-	gpiod_set_value_cansleep(boe->n_reset_gpio, 0);
-	usleep_range(15000, 20000);
+	usleep_range(35000, 40000);
 
 	gpiod_set_value_cansleep(boe->n_reset_gpio, 1);
-	usleep_range(2000, 5000);
-
+	usleep_range(15000, 20000);
 
 	ret = boe_panel_init(boe);
 	if (ret < 0) {
@@ -247,10 +249,11 @@ static int boe_panel_prepare(struct drm_panel *panel)
 	return 0;
 
 poweroff:
-	gpiod_set_value_cansleep(boe->n_reset_gpio, 1);
 	gpiod_set_value_cansleep(boe->io_vdd_en_gpio, 0);
 	gpiod_set_value_cansleep(boe->vss_pn_en_gpio, 0);
 	gpiod_set_value_cansleep(boe->backlight_en_gpio, 0);
+	gpiod_set_value_cansleep(boe->n_reset_gpio, 0);
+	usleep_range(2000, 3000);
 
 	return ret;
 }
