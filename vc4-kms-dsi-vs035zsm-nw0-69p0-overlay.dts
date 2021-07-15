@@ -20,8 +20,8 @@
 				compatible    = "boe,vs035zsm-nw0-69p0";
 				status        = "okay";
 				reg           = <0>;
-				n-reset-gpios   = <&gpio 17 0>;     // LCD RESET
-				io-vdd-en-gpios  = <&gpio 4 0>;     // 1V8 Enable
+				n-reset-gpios = <&gpio 17 0>;		// LCD RESET
+				io-vdd-en-gpios = <&gpio 4 0>;		// 1V8 Enable
 				vss-pn-en-gpios = <&gpio 5 0>;      // +5V7/-5V7 Enable
 				backlight-en-gpios = <&gpio 6 0>;   // BACKLIGHT Enable
 				port {
