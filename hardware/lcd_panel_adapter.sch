@@ -283,7 +283,7 @@ DIN A4, portrait with extra doc field</description>
 <circle x="-2.4" y="2" radius="0.125" width="0.25" layer="25"/>
 </package>
 <package name="SOP65P640X120-21N">
-<description>&lt;b&gt;PWP (R-PDSO-G20)&lt;/b&gt;&lt;br&gt;
+<description>&lt;b&gt;TPS61194PWPR&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-2.938" y="2.925" dx="1.475" dy="0.45" layer="1"/>
 <smd name="2" x="-2.938" y="2.275" dx="1.475" dy="0.45" layer="1"/>
@@ -546,35 +546,6 @@ DIN A4, portrait with extra doc field</description>
 <pin name="NC_2" x="22.86" y="20.32" length="middle" rot="R270"/>
 <pin name="AGND" x="25.4" y="20.32" length="middle" rot="R270"/>
 </symbol>
-<symbol name="LP8867CQPWPRQ1">
-<wire x1="5.08" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-30.48" x2="30.48" y2="2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-30.48" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
-<text x="31.75" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="31.75" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="VIN_1" x="0" y="0" length="middle"/>
-<pin name="LDO" x="0" y="-2.54" length="middle"/>
-<pin name="FSET" x="0" y="-5.08" length="middle"/>
-<pin name="VDDIO/EN" x="0" y="-7.62" length="middle"/>
-<pin name="FAULT" x="0" y="-10.16" length="middle"/>
-<pin name="SYNC" x="0" y="-12.7" length="middle"/>
-<pin name="PWM" x="0" y="-15.24" length="middle"/>
-<pin name="NC_1" x="0" y="-17.78" length="middle"/>
-<pin name="GND_1" x="0" y="-20.32" length="middle"/>
-<pin name="ISET" x="0" y="-22.86" length="middle"/>
-<pin name="EP" x="17.78" y="-35.56" length="middle" rot="R90"/>
-<pin name="VIN_2" x="35.56" y="0" length="middle" rot="R180"/>
-<pin name="NC_2" x="35.56" y="-2.54" length="middle" rot="R180"/>
-<pin name="SW" x="35.56" y="-5.08" length="middle" rot="R180"/>
-<pin name="PGND" x="35.56" y="-7.62" length="middle" rot="R180"/>
-<pin name="FB" x="35.56" y="-10.16" length="middle" rot="R180"/>
-<pin name="OUT1" x="35.56" y="-12.7" length="middle" rot="R180"/>
-<pin name="OUT2" x="35.56" y="-15.24" length="middle" rot="R180"/>
-<pin name="OUT3" x="35.56" y="-17.78" length="middle" rot="R180"/>
-<pin name="OUT4" x="35.56" y="-20.32" length="middle" rot="R180"/>
-<pin name="GND_2" x="35.56" y="-22.86" length="middle" rot="R180"/>
-</symbol>
 <symbol name="245863050104829+">
 <wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-71.12" x2="20.32" y2="2.54" width="0.254" layer="94"/>
@@ -701,6 +672,35 @@ DIN A4, portrait with extra doc field</description>
 <pin name="1" x="0" y="0" visible="pad" length="middle"/>
 <pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
 </symbol>
+<symbol name="TPS61194PWPR">
+<wire x1="5.08" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-30.48" x2="30.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-30.48" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
+<text x="31.75" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="31.75" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VIN_1" x="0" y="0" length="middle"/>
+<pin name="LDO" x="0" y="-2.54" length="middle"/>
+<pin name="FSET" x="0" y="-5.08" length="middle"/>
+<pin name="VDDIO/EN" x="0" y="-7.62" length="middle"/>
+<pin name="FAULT" x="0" y="-10.16" length="middle"/>
+<pin name="SYNC" x="0" y="-12.7" length="middle"/>
+<pin name="PWM" x="0" y="-15.24" length="middle"/>
+<pin name="NC_1" x="0" y="-17.78" length="middle"/>
+<pin name="GND_1" x="0" y="-20.32" length="middle"/>
+<pin name="ISET" x="0" y="-22.86" length="middle"/>
+<pin name="EP" x="17.78" y="-35.56" length="middle" rot="R90"/>
+<pin name="VIN_2" x="35.56" y="0" length="middle" rot="R180"/>
+<pin name="NC_2" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="SW" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<pin name="PGND" x="35.56" y="-7.62" length="middle" rot="R180"/>
+<pin name="FB" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="OUT1" x="35.56" y="-12.7" length="middle" rot="R180"/>
+<pin name="OUT2" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="OUT3" x="35.56" y="-17.78" length="middle" rot="R180"/>
+<pin name="OUT4" x="35.56" y="-20.32" length="middle" rot="R180"/>
+<pin name="GND_2" x="35.56" y="-22.86" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TLV62080DSGR" prefix="U">
@@ -778,50 +778,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps65130.pdf"&gt; Datasheet
 <attribute name="MANUFACTURER_PART_NUMBER" value="TPS65131RGET" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="595-TPS65131RGET" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS65131RGET?qs=Gse6rAGbi7%2FStiVl23F5Fg%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LP8867CQPWPRQ1" prefix="IC">
-<description>&lt;b&gt;LED Lighting Drivers 4-CHANNEL LED DRIVER&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.arrow.com/en/products/lp8867cqpwprq1/texas-instruments"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LP8867CQPWPRQ1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP65P640X120-21N">
-<connects>
-<connect gate="G$1" pin="EP" pad="21"/>
-<connect gate="G$1" pin="FAULT" pad="5"/>
-<connect gate="G$1" pin="FB" pad="16"/>
-<connect gate="G$1" pin="FSET" pad="3"/>
-<connect gate="G$1" pin="GND_1" pad="9"/>
-<connect gate="G$1" pin="GND_2" pad="11"/>
-<connect gate="G$1" pin="ISET" pad="10"/>
-<connect gate="G$1" pin="LDO" pad="2"/>
-<connect gate="G$1" pin="NC_1" pad="8"/>
-<connect gate="G$1" pin="NC_2" pad="19"/>
-<connect gate="G$1" pin="OUT1" pad="15"/>
-<connect gate="G$1" pin="OUT2" pad="14"/>
-<connect gate="G$1" pin="OUT3" pad="13"/>
-<connect gate="G$1" pin="OUT4" pad="12"/>
-<connect gate="G$1" pin="PGND" pad="17"/>
-<connect gate="G$1" pin="PWM" pad="7"/>
-<connect gate="G$1" pin="SW" pad="18"/>
-<connect gate="G$1" pin="SYNC" pad="6"/>
-<connect gate="G$1" pin="VDDIO/EN" pad="4"/>
-<connect gate="G$1" pin="VIN_1" pad="1"/>
-<connect gate="G$1" pin="VIN_2" pad="20"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="LED Lighting Drivers 4-CHANNEL LED DRIVER" constant="no"/>
-<attribute name="HEIGHT" value="1.2mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LP8867CQPWPRQ1" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="595-LP8867CQPWPRQ1" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LP8867CQPWPRQ1/?qs=XeJtXLiO41RVeEMZs%252BTQsg%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1023,6 +979,50 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="XAL4040-153MEC" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="994-XAL4040-153MEC" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Coilcraft/XAL4040-153MEC?qs=zCSbvcPd3papbG%2FB%2F2voqg%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS61194PWPR" prefix="IC">
+<description>&lt;b&gt;Low-EMI, High-Performance 4-Channel LED Driver&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/tps61194"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS61194PWPR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P640X120-21N">
+<connects>
+<connect gate="G$1" pin="EP" pad="21"/>
+<connect gate="G$1" pin="FAULT" pad="5"/>
+<connect gate="G$1" pin="FB" pad="16"/>
+<connect gate="G$1" pin="FSET" pad="3"/>
+<connect gate="G$1" pin="GND_1" pad="9"/>
+<connect gate="G$1" pin="GND_2" pad="11"/>
+<connect gate="G$1" pin="ISET" pad="10"/>
+<connect gate="G$1" pin="LDO" pad="2"/>
+<connect gate="G$1" pin="NC_1" pad="8"/>
+<connect gate="G$1" pin="NC_2" pad="19"/>
+<connect gate="G$1" pin="OUT1" pad="15"/>
+<connect gate="G$1" pin="OUT2" pad="14"/>
+<connect gate="G$1" pin="OUT3" pad="13"/>
+<connect gate="G$1" pin="OUT4" pad="12"/>
+<connect gate="G$1" pin="PGND" pad="17"/>
+<connect gate="G$1" pin="PWM" pad="7"/>
+<connect gate="G$1" pin="SW" pad="18"/>
+<connect gate="G$1" pin="SYNC" pad="6"/>
+<connect gate="G$1" pin="VDDIO/EN" pad="4"/>
+<connect gate="G$1" pin="VIN_1" pad="1"/>
+<connect gate="G$1" pin="VIN_2" pad="20"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Low-EMI, High-Performance 4-Channel LED Driver" constant="no"/>
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TPS61194PWPR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-TPS61194PWPR" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61194PWPR?qs=l4JqiU1WKg1XqvPt9th3XQ%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9140,7 +9140,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_P" device=""/>
 <part name="U1" library="SamacSys_Parts" deviceset="TLV62080DSGR" device=""/>
 <part name="IC1" library="SamacSys_Parts" deviceset="TPS65131RGET" device=""/>
-<part name="IC2" library="SamacSys_Parts" deviceset="LP8867CQPWPRQ1" device=""/>
 <part name="J1" library="SamacSys_Parts" deviceset="245863050104829+" device=""/>
 <part name="J2" library="SamacSys_Parts" deviceset="54548-2271" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
@@ -9167,7 +9166,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="15pF"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="12pF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10nF"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="560k"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k"/>
@@ -9177,7 +9176,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="12pF"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="75pF"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="715k"/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
@@ -9192,7 +9191,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="750k"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="60k"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="62k"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="49.9k"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="47uF"/>
@@ -9209,6 +9208,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="IC3" library="SamacSys_Parts" deviceset="TPS61194PWPR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9241,10 +9241,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="IC1" gate="G$1" x="58.42" y="149.86" smashed="yes">
 <attribute name="NAME" x="46.99" y="114.3" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="46.99" y="111.76" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="IC2" gate="G$1" x="76.2" y="81.28" smashed="yes">
-<attribute name="NAME" x="82.55" y="88.9" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="82.55" y="86.36" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="J1" gate="G$1" x="259.08" y="127" smashed="yes">
 <attribute name="NAME" x="265.43" y="134.62" size="1.778" layer="95" align="center-left"/>
@@ -9492,6 +9488,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="19.05" y="6.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="19.05" y="1.778" size="1.778" layer="96"/>
 </instance>
+<instance part="IC3" gate="G$1" x="76.2" y="81.28" smashed="yes">
+<attribute name="NAME" x="82.55" y="88.9" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="82.55" y="86.36" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9602,7 +9602,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="116.84" y="111.76"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="GND_2"/>
 <wire x1="111.76" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="58.42" x2="157.48" y2="58.42" width="0.1524" layer="91"/>
@@ -9613,11 +9612,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="165.1" y1="63.5" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
 <junction x="165.1" y="58.42"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<pinref part="IC2" gate="G$1" pin="OUT3"/>
 <wire x1="111.76" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="63.5" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 <junction x="114.3" y="58.42"/>
-<pinref part="IC2" gate="G$1" pin="OUT4"/>
 <wire x1="114.3" y1="60.96" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 <junction x="114.3" y="60.96"/>
@@ -9627,15 +9624,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="124.46" y="58.42"/>
 <pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="IC3" gate="G$1" pin="OUT3"/>
+<pinref part="IC3" gate="G$1" pin="OUT4"/>
+<pinref part="IC3" gate="G$1" pin="GND_2"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="PGND"/>
 <wire x1="111.76" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="IC3" gate="G$1" pin="PGND"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="IC2" gate="G$1" pin="EP"/>
 <wire x1="93.98" y1="43.18" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
@@ -9643,17 +9642,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="68.58" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="45.72" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
-<junction x="93.98" y="45.72"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="48.26" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <junction x="73.66" y="45.72"/>
-<pinref part="IC2" gate="G$1" pin="GND_1"/>
 <wire x1="76.2" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="60.96" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <junction x="68.58" y="45.72"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="48.26" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 <junction x="53.34" y="45.72"/>
+<pinref part="IC3" gate="G$1" pin="GND_1"/>
+<pinref part="IC3" gate="G$1" pin="EP"/>
+<junction x="93.98" y="45.72"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -9860,12 +9860,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="50.8" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="93.98" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VIN_2"/>
 <wire x1="114.3" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VIN_1"/>
 <wire x1="76.2" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="81.28" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
 <junction x="73.66" y="93.98"/>
@@ -9882,6 +9879,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="50.8" y="93.98"/>
 <pinref part="L4" gate="G$1" pin="1"/>
 <junction x="114.3" y="93.98"/>
+<pinref part="IC3" gate="G$1" pin="VIN_1"/>
+<pinref part="IC3" gate="G$1" pin="VIN_2"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
@@ -10150,10 +10149,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="LCD_BL_K1" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="OUT1"/>
 <wire x1="111.76" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 <label x="116.84" y="68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="OUT1"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="45"/>
@@ -10168,10 +10167,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="LCD_BL_K2" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="OUT2"/>
 <wire x1="111.76" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 <label x="116.84" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="OUT2"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
@@ -10186,7 +10185,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="FB"/>
 <wire x1="111.76" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="60.96" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
@@ -10197,18 +10195,19 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="152.4" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
 <junction x="137.16" y="60.96"/>
 <pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="IC3" gate="G$1" pin="FB"/>
 </segment>
 </net>
 <net name="LCD_BL_EN" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="VDDIO/EN"/>
 <wire x1="76.2" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="73.66" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="SYNC"/>
 <wire x1="73.66" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <junction x="73.66" y="73.66"/>
 <label x="71.12" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="VDDIO/EN"/>
+<pinref part="IC3" gate="G$1" pin="SYNC"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
@@ -10218,9 +10217,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="LCD_BL_FAULT" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="FAULT"/>
 <wire x1="76.2" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <label x="71.12" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC3" gate="G$1" pin="FAULT"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="25.4" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
@@ -10230,10 +10229,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="LCD_BL_PWM" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PWM"/>
 <wire x1="76.2" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 <label x="71.12" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="PWM"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
@@ -10243,25 +10242,25 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="LDO"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="78.74" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="LDO"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="ISET"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="ISET"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="FSET"/>
 <wire x1="76.2" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="76.2" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="IC3" gate="G$1" pin="FSET"/>
 </segment>
 </net>
 <net name="+36V" class="0">
@@ -10499,12 +10498,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <wire x1="137.16" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="SW"/>
 <wire x1="111.76" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="L4" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="76.2" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="93.98" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
 <junction x="134.62" y="76.2"/>
+<pinref part="IC3" gate="G$1" pin="SW"/>
 </segment>
 </net>
 <net name="LCD_TEARING" class="0">
