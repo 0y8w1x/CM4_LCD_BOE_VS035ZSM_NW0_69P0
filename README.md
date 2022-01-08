@@ -3,8 +3,7 @@ Raspberry Pi CM4 bindings for BOE VS035ZSM-NW0-69P0 1440x1600 LCD display
 
 **NOTE:** Large parts are copied from the [JDI LT070ME05000](https://github.com/harlab/CM4_LCD_LT070ME05000) LCD
 
-**Status:** WIP 
-**TODO:** driver + device tree for rpi linux
+**Status:** Should work, but due to chip shortage not tested yet.
 
 # Overview
 BOE VS035ZSM NW0 69P0 panel is a 1440x1600 4-lane DSI LCD display. To use it, 4-lane DSI interface is required, so it can be used with Raspberry Pi Compute Modules 3 and 4.
